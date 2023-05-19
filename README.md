@@ -145,3 +145,20 @@ Amazon S3 event notifications are designed to be delivered at least once. Typica
 <details><summary><b>Source</b></summary>
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html
 </details>
+
+
+### Theorical Question 12
+
+Do you know what the s3 s3 versioning is ?
+
+<details><summary><b>Answer</b></summary>
+ou can use S3 Versioning to keep multiple variants of an object in the same bucket. With S3 Versioning, you can preserve, retrieve, and restore every version of every object stored in your buckets. You can easily recover from both unintended user actions and application failures.
+
+When you enable S3 Versioning in a bucket, Amazon S3 generates a unique version ID for each object added to the bucket. Objects that already existed in the bucket at the time that you enable versioning have a version ID of null.
+
+An object is uniquely identified within a bucket by a key (name) and a version ID (if S3 Versioning is enabled on the bucket)
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html
+</details>
