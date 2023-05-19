@@ -56,3 +56,92 @@ After you create a job, Amazon S3 processes the list of objects in the manifest 
 <details><summary><b>Source</b></summary>
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html
 </details>
+
+### Theorical Question 5
+
+Do you know what the s3 block access do
+
+<details><summary><b>Answer</b></summary>
+When Amazon S3 receives a request to access a bucket or an object, it determines whether the bucket or the bucket owner's account has a block public access setting applied. If the request was made through an access point, Amazon S3 also checks for block public access settings for the access point. If there is an existing block public access setting that prohibits the requested access, Amazon S3 rejects the request.
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html
+</details>
+
+### Theorical Question 6
+
+Do you know what the s3 bucket policy is
+
+<details><summary><b>Answer</b></summary>
+ Use IAM-based policy language to configure resource-based permissions for your S3 buckets and the objects in them.
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html
+</details>
+
+### Theorical Question 7
+
+s3 access point
+
+<details><summary><b>Answer</b></summary>
+Amazon S3 access points simplify data access for any AWS service or customer application that stores data in S3. Access points are named network endpoints that are attached to buckets that you can use to perform S3 object operations, such as GetObject and PutObject. Each access point has distinct permissions and network controls that S3 applies for any request that is made through that access point.
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html
+</details>
+
+### Theorical Question 8
+
+Do you know what Access control lists (ACLs) and se object ownership is ?
+
+<details><summary><b>Answer</b></summary>
+Grant read and write permissions for individual buckets and objects to authorized users. As a general rule, we recommend using S3 resource-based policies (bucket policies and access point policies) or IAM user policies for access control instead of ACLs. Policies are a simplified and more flexible access control option. With bucket policies and access point policies, you can define rules that apply broadly across all requests to your Amazon S3 resources.
+
+S3 Object Ownership is an Amazon S3 bucket-level setting that you can use to disable or enable ACLs. By default, ACLs are disabled. With ACLs disabled, the bucket owner owns all the objects in the bucket and manages access to data exclusively by using access-management policies.
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html
+</details>
+
+### Theorical Question 9
+
+Do you know what the s3 analizer is ?
+
+<details><summary><b>Answer</b></summary>
+Evaluate and monitor your S3 bucket access policies, ensuring that the policies provide only the intended access to your S3 resources.
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html
+</details>
+
+
+### Theorical Question 10
+
+Do you know what the s3 object lambda ?
+
+<details><summary><b>Answer</b></summary>
+With Amazon S3 Object Lambda, you can add your own code to Amazon S3 GET, LIST, and HEAD requests to modify and process data as it is returned to an application. You can use custom code to modify the data returned by S3 GET requests to filter rows, dynamically resize and watermark images, redact confidential data, and more. You can also use S3 Object Lambda to modify the output of S3 LIST requests to create a custom view of all objects in a bucket and S3 HEAD requests to modify object metadata such as object name and size. You can use S3 Object Lambda as an origin for your Amazon CloudFront distribution to tailor data for end users, such as automatically resizing images, transcoding older formats (like from JPEG to WebP), or stripping metadata. 
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/transforming-objects.html
+</details>
+
+### Theorical Question 11
+
+Do you know what the s3 event notifications are ?
+
+<details><summary><b>Answer</b></summary>
+You can use the Amazon S3 Event Notifications feature to receive notifications when certain events happen in your S3 bucket. To enable notifications, add a notification configuration that identifies the events that you want Amazon S3 to publish. Make sure that it also identifies the destinations where you want Amazon S3 to send the notifications. You store this configuration in the notification subresource that's associated with a bucket.
+
+Amazon S3 event notifications are designed to be delivered at least once. Typically, event notifications are delivered in seconds but can sometimes take a minute or longer.
+</details>
+
+<details><summary><b>Source</b></summary>
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html
+</details>
